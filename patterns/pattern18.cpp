@@ -8,9 +8,12 @@ void pattern(int n){
     cout<<" ";
     }
     //for character
+    char ch='A';
     int breakpoint=(2*i+1)/2;
-    for(char ch='A';ch<'A'+2*i+1;ch++){
+    for(int j=1;j<=2*i+1;j++){
         cout<<ch;
+        if(j<=breakpoint)ch++;
+        else ch--;
     }
     //for space
     for(char ch='A'+i;ch<'A'+n-i;ch--){
